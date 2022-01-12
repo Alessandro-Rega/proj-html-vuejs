@@ -1,16 +1,23 @@
 <template>
   <div id="app">
+    <Header v-bind:vociMenu="vociMenu"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Header from "./components/Macro/Header.vue"; 
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Header,
+  },
+  data(){
+    return{
+      vociMenu: ["Home", "About", "Services", "Work", "Articles",],
+    }
+  },
 }
 </script>
 

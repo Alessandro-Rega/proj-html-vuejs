@@ -1,0 +1,27 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+// Variabili
+@import "./variables.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+body{
+    background-color: #000;
+}
+
+h1{
+    color: $bianco;
+}
+
+.btn{
+    border: none;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    cursor: pointer;
+}
