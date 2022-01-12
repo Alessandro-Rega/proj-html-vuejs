@@ -421,7 +421,6 @@ svg:last-child{
     justify-content: center;
     align-items: center;
     padding: 130px 0;
-    margin-bottom: 300px;
 
     .left{
         width: 40%;

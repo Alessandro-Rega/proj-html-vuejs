@@ -6,6 +6,15 @@
           <span class="data">December 7th, 2015</span>
           <hr>
           <p class="desc">Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed</p>
+
+          <div class="card-hover">
+              <div>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+              </div>
+              <span>Redeveloping Florida’s Remote Southern Coast</span>
+              <span>Architecture, Buildings, Construction, News</span>
+          </div>
       </div>
       <div class="card">
           <img src="../../assets/img/ponte.jpg" alt="ruspa">
@@ -13,13 +22,31 @@
           <span class="data">December 7th, 2015</span>
           <hr>
           <p class="desc">Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed</p>
+
+          <div class="card-hover">
+              <div>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+              </div>
+              <span>How We Manage Large Construction Projects</span>
+              <span>Architecture, Buildings, Construction, News</span>
+          </div>
       </div>
       <div class="card">
           <img src="../../assets/img/architettatura.jpg" alt="ruspa">
-          <span class="titolo">Future proofing a modern home</span>
+          <span class="titolo">Future Proofing A Modern Home</span>
           <span class="data">December 6th, 2015</span>
           <hr>
           <p class="desc">Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed</p>
+
+          <div class="card-hover">
+              <div>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+              </div>
+              <span>Future Proofing A Modern Home</span>
+              <span>Architecture, Buildings, Construction, News</span>
+          </div>
       </div>
   </div>
 </template>
@@ -44,6 +71,47 @@ export default {
 .card{
     width: 370px;
     background-color: $bianco;
+    position: relative;
+
+    .card-hover{
+        opacity: 0;
+        width: 370px;
+        height: 223px;
+        background-color: $giallo;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        transition: 0.5s ease-in-out;
+
+        &:hover{
+            opacity: 1;
+        }
+
+        i{
+            background-color: #fffaeb;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 22px;
+            color: #fed23f;
+            margin: 10px 7px;
+            cursor: pointer;
+        }
+
+        span{
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        span:last-child{
+            font-size: 12px;
+        }
+    }
 
     img{
         width: 370px;
