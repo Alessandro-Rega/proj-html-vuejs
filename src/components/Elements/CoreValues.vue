@@ -71,6 +71,14 @@ export default {
     position: relative;
     color: $scritta-grigio;
 
+    &:hover i{
+        background-color: $giallo;
+    }
+
+    &:hover span{
+        color: $giallo;
+    }
+
     i{
         font-size: 60px;
         color: $bianco;

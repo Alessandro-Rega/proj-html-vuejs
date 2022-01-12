@@ -112,9 +112,16 @@ export default {
         color: $bianco;
         position: absolute;
         bottom: -20px;
-        border: 2px solid white;
+        border: 2px solid $bianco;
         padding: 12px 50px;
         font-size: 15px;
+        transition: 0.15s ease-in-out;
+
+        &:hover{
+            background-color: $bianco;
+            color: $nero;
+            border: 2px solid $nero;
+        }
     }
 }
 

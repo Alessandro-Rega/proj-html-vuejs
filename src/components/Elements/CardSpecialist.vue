@@ -6,6 +6,12 @@
         </div>
         <h3>Buildings</h3>
         <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+
+        <div class="card-hover">
+            <span>artfully crafted</span>
+            <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            <button class="btn">get a quote</button>
+        </div>
       </div>
       <div class="card">
         <div class="img">
@@ -13,6 +19,12 @@
         </div>
         <h3>Renovate</h3>
         <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+
+        <div class="card-hover">
+            <span>artfully crafted</span>
+            <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            <button class="btn">get a quote</button>
+        </div>
       </div>
       <div class="card">
         <div class="img">
@@ -20,6 +32,12 @@
         </div>
         <h3>Construct</h3>
         <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+
+        <div class="card-hover">
+            <span>artfully crafted</span>
+            <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            <button class="btn">get a quote</button>
+        </div>
       </div>
       <div class="card">
         <div class="img">
@@ -27,6 +45,12 @@
         </div>
         <h3>Exclusive</h3>
         <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+
+        <div class="card-hover">
+            <span>artfully crafted</span>
+            <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            <button class="btn">get a quote</button>
+        </div>
       </div>
   </section>
 </template>
@@ -56,6 +80,46 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 0.7em;
+    position: relative;
+}
+
+.card-hover{
+    opacity: 0;
+    width: 400px;
+    height: 284px;
+    background-color: $giallo;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    border-radius: 0.7em;
+    padding: 30px 0 0 0;
+
+    &:hover
+    {
+        opacity: 1;
+    }
+
+    span{
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    p{
+        line-height: 35px;
+    }
+
+    button{
+        padding: 12px 30px;
+        background-color: #ffe07b;
+
+        &:hover{
+            background-color: $nero;
+            color: $bianco;
+        }
+    }
 }
 
 .img{

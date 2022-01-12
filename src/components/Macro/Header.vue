@@ -72,15 +72,22 @@ header{
             font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0d7";
             position: absolute;
             color: $bianco;
-            top: 66px;
+            top: 67px;
             left: 12px;
             font-size: 40px;
+            z-index: 2;
         }
     }
 
     button{
         background-color: $giallo;
         padding: 12px 30px;
+        transition: 0.15s ease-in-out;
+    }
+
+    button:hover{
+        background-color: $nero;
+        color: $bianco;
     }
 }
 </style>

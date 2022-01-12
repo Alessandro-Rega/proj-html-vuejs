@@ -67,11 +67,23 @@ export default {
     button:first-of-type{
         background-color: $nero;
         color: $bianco;
+        transition: 0.15s ease-in-out;
+    }
+
+    button:first-of-type:hover{
+        background-color: $giallo;
+        color: $nero;
     }
 
     button:last-of-type{
         background-color: $giallo;
         color: $nero;
+        transition: 0.15s ease-in-out;
+    }
+
+    button:last-of-type:hover{
+        background-color: $nero;
+        color: $bianco;
     }
 
     .quadrati{
