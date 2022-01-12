@@ -46,7 +46,7 @@
           <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
           <CardCase/>
           <div class="all-projects">
-            <span>view all projects</span>
+            <span class="viewall">view all projects</span>
           </div>
       </section>
 
@@ -68,7 +68,31 @@
             <i class="fas fa-circle"></i>
             <i class="far fa-circle"></i>
           </div>
-          <svg version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="padding:0;" fill="rgba(255,255,255,1)"><path d="M0 100 C40 0 60 0 100 100 Z"></path></svg>
+          <svg version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="padding:0;" fill="rgba(245,245,245,1)"><path d="M0 100 C40 0 60 0 100 100 Z"></path></svg>
+      </section>
+
+      <section class="latest">
+          <span>Latest News</span>
+          <hr>
+          <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+          <CardNews/>
+          <div class="all-projects">
+            <span class="viewall">view all articles</span>
+          </div>
+      </section>
+
+      <TrustedPartners/>
+
+      <section class="spaces">
+          <div class="left">
+              <span>Building Inspiring Spaces</span>
+              <hr>
+              <p>Vivamus sed consectetur tellus dolor sit amet, consectetur adipiscing lorem elit sadip ipsum ets ficilis uns.</p>
+          </div>
+          <div class="right">
+              <button class="btn">get a free quote</button>
+              <span>Only takes a few seconds!</span>
+          </div>
       </section>
   </main>
 </template>
@@ -77,6 +101,8 @@
 import CardSpecialist from "../Elements/CardSpecialist.vue";
 import CardCase from "../Elements/CardCase.vue";
 import CoreValues from "../Elements/CoreValues.vue";
+import CardNews from "../Elements/CardNews.vue";
+import TrustedPartners from "../Elements/TrustedPartners.vue";
 
 export default {
     name: 'Main',
@@ -84,6 +110,8 @@ export default {
         CardSpecialist,
         CardCase,
         CoreValues,
+        CardNews,
+        TrustedPartners,
     },
 }
 </script>
@@ -222,42 +250,42 @@ svg:last-child{
         line-height: 30px;
         color: $scritta-grigio;
     }
+}
 
-    .all-projects{
-        width: 80%;
-        height: 50px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        margin-top: 50px;
+.all-projects{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
 
-        span{
-            text-transform: uppercase;
-            font-size: 15px;
-            color: $scritta-nero;
-            cursor: pointer;
-        }
+    .viewall{
+        text-transform: uppercase;
+        font-size: 15px;
+        color: $scritta-nero;
+        cursor: pointer;
+    }
 
-        span:before{
-            content: "";
-            position: absolute;
-            right: 150px;
-            top: 23px;
-            width: 400px;
-            height: 10px;
-            border-top: 2px solid #f5f5f5;
-        }
-        span:after{
-            content: "";
-            position: absolute;
-            left: 150px;
-            top: 23px;
-            width: 400px;
-            height: 10px;
-            border-top: 2px solid #f5f5f5;
-        }
+    .viewall:before{
+        content: "";
+        position: absolute;
+        right: 150px;
+        top: 23px;
+        width: 400px;
+        height: 10px;
+        border-top: 2px solid #f5f5f5;
+    }
+    .viewall:after{
+        content: "";
+        position: absolute;
+        left: 150px;
+        top: 23px;
+        width: 400px;
+        height: 10px;
+        border-top: 2px solid #f5f5f5;
     }
 }
 
@@ -346,6 +374,93 @@ svg:last-child{
             margin: 0 5px;
             font-size: 13px;
             cursor: pointer;
+        }
+    }
+}
+
+.latest{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: #f5f5f5;
+
+    span{
+        color: $scritta-nero;
+        font-size: 35px;
+    }
+
+    hr{
+        width: 12%;
+        border: none;
+        border-top: 2px solid $giallo;
+        margin: 20px 0 30px 0;
+    }
+
+    p{
+        width: 48%;
+        text-align: center;
+        line-height: 30px;
+        color: $scritta-grigio;
+    }
+    .viewall:before{
+        border-top: 2px solid #fff;
+    }
+    .viewall:after{
+        border-top: 2px solid #fff;
+    }
+}
+
+.spaces{
+    background-image: url("../../assets/img/about.jpg");
+    background-position-y: -650px;
+    color: $bianco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0;
+    margin-bottom: 300px;
+
+    .left{
+        width: 40%;
+        
+        span{
+            font-size: 40px;
+        }
+
+        hr{
+        width: 30%;
+        border: none;
+        border-top: 2px solid $giallo;
+        margin: 30px 0 30px 0;
+        }
+
+        p{
+            width: 90%;
+            font-size: 20px;
+        }
+    }
+
+    .right{
+        margin-left: 50px;
+        text-align: center;
+
+        button{
+            font-size: 20px;
+            padding: 17px 42px;
+            background-color: $giallo;
+
+            &:hover{
+                background-color: $nero;
+                color: $bianco;
+            }
+        }
+
+        span{
+            display: block;
+            margin-top: 20px;
         }
     }
 }
