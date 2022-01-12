@@ -11,12 +11,14 @@
     font-family: 'Montserrat', sans-serif;;
 }
 
-body{
-    background-color: #000;
-}
+// body{
+//     background-color: #000;
+// }
 
 h1{
     color: $bianco;
+    text-transform: uppercase;
+    font-size: 60px;
 }
 
 .btn{
