@@ -2,6 +2,7 @@
   <div id="app">
     <Header v-bind:vociMenu="vociMenu"/>
     <Hero/>
+    <Main/>
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 
 import Header from "./components/Macro/Header.vue";
 import Hero from "./components/Macro/Hero.vue"; 
+import Main from "./components/Macro/Main.vue"; 
 
 export default {
   name: 'App',
   components: {
     Header,
     Hero,
+    Main,
   },
   data(){
     return{

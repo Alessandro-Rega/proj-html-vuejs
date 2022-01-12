@@ -80,6 +80,7 @@ header{
 
     button{
         background-color: $giallo;
+        padding: 12px 30px;
     }
 }
 </style>
