@@ -1,11 +1,32 @@
 <template>
   <section>
-      <div class="card" v-for="card in cardList" :key="card">
+      <div class="card">
         <div class="img">
-            <i :class="card.immagine"></i>
+            <i class="far fa-building"></i>
         </div>
-        <h3>{{card.nome}}</h3>
-        <p>{{card.testo}}</p>
+        <h3>Buildings</h3>
+        <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+      </div>
+      <div class="card">
+        <div class="img">
+            <i class="fas fa-sync"></i>
+        </div>
+        <h3>Renovate</h3>
+        <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+      </div>
+      <div class="card">
+        <div class="img">
+            <i class="fas fa-home"></i>
+        </div>
+        <h3>Construct</h3>
+        <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+      </div>
+      <div class="card">
+        <div class="img">
+            <i class="fas fa-truck"></i>
+        </div>
+        <h3>Exclusive</h3>
+        <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
       </div>
   </section>
 </template>
@@ -13,9 +34,6 @@
 <script>
 export default {
     name: 'CardSpecialist',
-    props:{
-        cardList: Object,
-    }
 }
 </script>
 
