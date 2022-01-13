@@ -117,7 +117,7 @@ footer{
   margin-left: 30px;
 
   p{
-    width: 90%;
+    width: 95%;
     color: #a0a0a0;
     line-height: 35px;
     margin: 20px 0;
@@ -180,13 +180,15 @@ footer{
       width: 20px;
       position: absolute;
       top: 5px;
-      right: 0;
+      right: -20px;
     }
 
     p{
+      width: 107%;
       font-size: 13px;
       color: $bianco;
       margin-bottom: 30px;
+      margin-top: 10px;
     }
 
     a{
